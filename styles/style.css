@@ -373,6 +373,7 @@ header .head a {
       -ms-flex-align: center;
           align-items: center;
   padding: 25px 10px;
+  background-image: url(../img/images/bgGamestyle.jpg);
 }
 
 .gamestyle .infinite .wrapper {
@@ -405,25 +406,25 @@ header .head a {
 }
 
 .gamestyle .infinite .text {
-  width: 35%;
-  color: #F0A500;
+  width: 45%;
+  color: white;
   height: 100%;
   display: none;
+  padding: 0;
 }
 
 .gamestyle .infinite .text h2 {
   font-size: 35px;
   margin-bottom: 50px;
   line-height: 40px;
-  color: #F0A500;
+  color: white;
 }
 
 .gamestyle .infinite .text p {
-  color: #082032;
   font-size: 18px;
   letter-spacing: 2px;
   line-height: 25px;
-  padding-right: 180px;
+  padding-right: 20%;
 }
 
 .gamestyle .infinite .basetext {
