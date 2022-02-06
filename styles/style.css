@@ -43,7 +43,6 @@ ol, ul {
 }
 
 body {
-  background-color: #000000;
   margin: 0;
   font-family: 'Red Hat Display', sans-serif;
 }
@@ -68,6 +67,21 @@ nav {
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
+}
+
+nav button {
+  border: 0;
+  display: block;
+  padding: 10px;
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  top: 10px;
+  left: 20px;
+  background-image: url(../img/picto/darkmode.png);
+  background-color: transparent;
+  background-size: contain;
+  text-indent: -9999px;
 }
 
 nav .logo {
@@ -374,6 +388,7 @@ header .head a {
           align-items: center;
   padding: 25px 10px;
   background-image: url(../img/images/bgGamestyle.jpg);
+  padding: 50px 0;
 }
 
 .gamestyle .infinite .wrapper {
@@ -458,5 +473,138 @@ header .head a {
   background-image: url(../img/picto/vert.png);
   bottom: 270px;
   left: 500px;
+}
+
+footer {
+  background-color: white;
+  padding: 25px 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 10%;
+}
+
+footer ul li a {
+  display: block;
+  height: 50px;
+  width: 50px;
+  background-size: contain;
+  text-indent: -9000px;
+  margin-left: 25px;
+}
+
+footer ul li:nth-child(1) a {
+  background-image: url(../img/picto/facebook.png);
+}
+
+footer ul li:nth-child(2) a {
+  background-image: url(../img/picto/twitter.png);
+}
+
+footer ul li:nth-child(3) a {
+  background-image: url(../img/picto/twitch.png);
+}
+
+footer ul li:nth-child(4) a {
+  background-image: url(../img/picto/youtube.png);
+}
+
+footer .form {
+  width: 50%;
+}
+
+footer .form h2 {
+  text-align: center;
+  color: #F0A500;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+footer .form .form-style {
+  margin: 10px auto;
+  width: 400px;
+  padding: 20px 12px 10px 20px;
+}
+
+footer .form .form-style td {
+  padding: 0;
+  display: block;
+  list-style: none;
+  margin: 10px 0 0 0;
+}
+
+footer .form .form-style td label {
+  margin: 0 0 3px 0;
+  padding: 0px;
+  display: block;
+  font-weight: 700;
+  color: #F0A500;
+}
+
+footer .form .form-style td label .required {
+  color: #082032;
+}
+
+footer .form .form-style td input[type=submit], footer .form .form-style td input[type=reset] {
+  background-color: #334756;
+  padding: 5px 10px;
+  border: none;
+  color: white;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+footer .form .form-style td input[type=submit]:hover, footer .form .form-style td input[type=reset]:hover {
+  background-color: #082032;
+  color: #F0A500;
+}
+
+footer .form .form-style td .field-textarea {
+  height: 50px;
+}
+
+footer .form .form-style td input[type=text], footer .form .form-style td input[type=email], footer .form .form-style td textarea {
+  border: 1px solid #BEBEBE;
+  padding: 7px;
+  margin: 0px;
+}
+
+footer .form .form-style td .long {
+  width: 100%;
+}
+
+footer .form .form-style td .error {
+  color: #F0A500;
+}
+
+.dark-mode nav {
+  background-color: #082032;
+}
+
+.dark-mode header .head {
+  background-image: url(../img/images/cropped.jpg);
+}
+
+.dark-mode header .head .container {
+  background-color: #f0a40075;
+  color: #082032;
+}
+
+.dark-mode header .head a {
+  background-color: #f0a4009a;
 }
 /*# sourceMappingURL=style.css.map */

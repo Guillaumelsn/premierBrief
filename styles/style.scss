@@ -38,13 +38,11 @@ $color1 : #F0A500;
 $color2 : #334756;
 $color3 : #082032;
 $color4 : #000000;
-
 .flex {
     display: flex;
     flex-wrap: wrap;
 }
 body {
-    background-color: $color4;
     margin: 0;
     font-family: 'Red Hat Display', sans-serif;
 }
@@ -66,7 +64,21 @@ nav {
     font-weight: 700;
     letter-spacing: 1px;
     text-transform: uppercase;
-    
+    button {
+        border: 0;
+        display: block;
+        padding: 10px;
+        position: absolute;
+        height: 50px;
+        width: 50px;
+        top: 10px;
+        left: 20px;
+        background-image: url(../img/picto/darkmode.png);
+        background-color: transparent;
+        background-size: contain;
+        text-indent: -9999px;
+
+    }
     .logo {
         height: 50px;
         width: 150px;
@@ -76,6 +88,7 @@ nav {
         
         li {
             padding: 15px;
+            
             
             a {
                 color: White;
@@ -302,6 +315,7 @@ header {
 .gamestyle {
     color: white;
     background-color: white;
+    
     .infinite {
         display: flex;
         justify-content: space-around;
@@ -309,6 +323,7 @@ header {
         align-items: center;
         padding: 25px 10px;
         background-image: url(../img/images/bgGamestyle.jpg);
+        padding: 50px 0;
 
         .wrapper{
             position: relative;
@@ -384,3 +399,130 @@ header {
             bottom: 270px;
             left: 500px;
         }}}
+
+        footer {
+            background-color: rgb(255, 255, 255);
+            padding: 25px 0;
+            justify-content: center;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            ul {
+                display: flex;
+                width: 10%;
+                li {
+                    
+                    a {
+                        display: block;
+                        height: 50px;
+                        width: 50px;
+                        background-size: contain;
+                        text-indent: -9000px;
+                        margin-left: 25px;
+                    }
+                    &:nth-child(1) {
+                        a {
+                            background-image: url(../img/picto/facebook.png);
+                        }
+                    }
+                    &:nth-child(2) {
+                        a {
+                            background-image: url(../img/picto/twitter.png);
+                        }
+                    }
+                    &:nth-child(3) {
+                        a {
+                            background-image: url(../img/picto/twitch.png);
+                        }
+                    }
+                    &:nth-child(4) {
+                        a {
+                            background-image: url(../img/picto/youtube.png);
+                        }
+                    }
+                }
+                
+
+            }
+            .form {
+                width: 50%;
+                h2 {
+                    text-align: center;
+                    color: $color1;
+                    font-size: 18px;
+                    letter-spacing: 2px;
+                }
+                .form-style {
+                    margin: 10px auto;
+                    width: 400px;
+                    padding: 20px 12px 10px 20px;
+                    td {
+                        padding: 0;
+                        display: block;
+                        list-style: none;
+                        margin: 10px 0 0 0;
+
+                        label {
+                            margin: 0 0 3px 0;
+                            padding: 0px;
+                            display: block;
+                            font-weight: 700;
+                            color: $color1;
+                            .required {
+                                color: $color3;
+                            }
+                        }
+
+                        input[type=submit], input[type=reset] {
+                            background-color: $color2;
+                            padding: 5px 10px;
+                            border: none;
+                            color: white;
+                            box-shadow: none;
+                            &:hover {
+                                background-color: $color3;
+                                color: $color1;
+                            }
+                        }
+
+                        .field-textarea {
+                            height: 50px;
+                        }
+
+                        input[type=text], input[type=email], textarea{
+                        border:1px solid #BEBEBE;
+                        padding: 7px;
+                        margin:0px;
+                        }
+                        .long {
+                            width: 100%;
+                        }
+                        .error {
+                            color: $color1;
+                        }
+                    }
+                }
+
+            }
+        }
+
+
+
+        .dark-mode {
+            
+            nav {
+                background-color: $color3;
+            }
+            header {
+                .head {
+                    background-image: url(../img/images/cropped.jpg);
+                    .container {
+                        background-color: #f0a40075;
+                        color: $color3;
+                    }
+                    a {
+                        background-color: #f0a4009a;
+                    }
+                }
+            }
+        }
