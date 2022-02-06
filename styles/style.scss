@@ -308,9 +308,12 @@ header {
         flex-wrap: wrap;
         align-items: center;
         padding: 25px 10px;
+        background-image: url(../img/images/bgGamestyle.jpg);
+
         .wrapper{
             position: relative;
             height: 600px;
+
             .color {
             display: block;
             position: absolute;
@@ -334,22 +337,22 @@ header {
                 background-position: center center;
         }}
         .text {
-            width: 35%;
-            color: $color1;
+            width: 45%;
+            color: white;
             height: 100%;
             display: none;
+            padding: 0;
             h2 {
                 font-size: 35px;
                 margin-bottom: 50px;
                 line-height: 40px;
-                color: $color1;
+                color: white;
             }
             p {
-                color: $color3;
                 font-size: 18px;
                 letter-spacing: 2px;
                 line-height: 25px;
-                padding-right: 180px;
+                padding-right: 20%;
             }
         }
         .basetext {
