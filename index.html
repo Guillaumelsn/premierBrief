@@ -1,12 +1,196 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <title>Magic The Gathering</title>
 </head>
 <body>
-    
+
+    <header>
+            <nav class="flex">
+                <img src="./img/picto/Logo-magic.png" alt="Logo Magic" class="logo">
+                <ul class="flex">
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#gameplay">Jouer</a></li>
+                    <li><a href="#lecture">Tuto</a></li>
+                    <li><input class="color" type="color" id="head" value="#F0A500" name="head"></li>
+                </ul>
+            </nav>
+            <div class="head flex">
+                <div class="container">
+                    <img src="./img/picto/Logo-magic.png" alt="Logo Magic the Gathering">
+                    <p>Découvrez le plus grand jeu de cartes à collectionner au monde ! Que vous jouiez en personne ou en ligne, la mission de Magic: The Gathering reste la même : s'amuser tout en rassemblant les gens.</p>
+                </div>
+                <a href="/extensions">Plus d'informations</a>
+        </div>
+    </header>
+
+    <div class="welcome">
+        <div>
+            <h1>Bienvenue dans l'univers<span>  Magic: the Gathering</span></h1>
+            <article class="flex">
+                <div class="wrap">
+                    <h2>RÉUNIR LES GENS AVEC L'AMITIÉ, LA COMPÉTITION ET LE PLAISIR</h2>
+                    <P>En un coup d'œil, Magic est un jeu de cartes à collectionner rempli de batailles stratégiques et de jeux de cartes uniques. Mais Magic a toujours été plus grand que la boîte. Que vous vous amusiez à la table de la cuisine ou que vous participiez à une compétition à enjeux élevés, il y a une place pour vous ici.</P>
+                </div>
+                <figure></figure>
+            </article>
+        </div>
+    </div>
+
+    <section id="gameplay" class="gameplay">
+        <div>
+            <h2>Il existe plusieurs façon de <span>jouer</span></h2>
+            <div class="btn">
+                <button onclick="maFonction()">Limité</button>
+                <button onclick="maFonction2()">Construit</button>
+                <button onclick="maFonction3()">Commander</button>
+            </div>
+            <div class="article1" id="maDIV">
+                <p class="intro">Improvisez en ouvrant les packs sur place ! Construisez des decks uniques et combattez avec les cartes que vous obtenez.</p>
+                <article>
+                    <p>CARTES DANS UN JEU</p>
+                    <img src="./img/picto/card-games.png" alt="cartes">
+                    <p>40+</p>
+                </article>
+                <article>
+                    <p>Joueurs</p>
+                    <img src="./img/picto/people.png" alt="joueur">
+                    <p>2</p>
+                </article>
+                <article>
+                    <p>Durée de jeu</p>
+                    <img src="./img/picto/time.png" alt="durée">
+                    <p>25 minutes</p>
+                </article>
+            </div> 
+            <div class="article" id="maDIV2">
+                <p class="intro">Vos cartes, votre deck, votre victoire ! Construisez le deck ultime, puis affrontez vos concurrents et régnez victorieux.</p>
+                <article>
+                    <p>CARTES DANS UN JEU</p>
+                    <img src="./img/picto/card-games.png" alt="cartes">
+                    <p>60+</p>
+                </article>
+                <article>
+                    <p>Joueurs</p>
+                    <img src="./img/picto/people.png" alt="joueur">
+                    <p>2</p>
+                </article>
+                <article>
+                    <p>Durée de jeu</p>
+                    <img src="./img/picto/time.png" alt="durée">
+                    <p>25 minutes</p>
+                </article>
+            </div>
+            <div class="article" id="maDIV3">
+                <p class="intro">Avez-vous ce qu'il faut pour être le dernier debout? Préparez-vous à affronter plusieurs adversaires à la fois !</p>
+                <article>
+                    <p>CARTES DANS UN JEU</p>
+                    <img src="./img/picto/card-games.png" alt="cartes">
+                    <p>100</p>
+                </article>
+                <article>
+                    <p>Joueurs</p>
+                    <img src="./img/picto/people.png" alt="joueur">
+                    <p>2+</p>
+                </article>
+                <article>
+                    <p>Durée de jeu</p>
+                    <img src="./img/picto/time.png" alt="durée">
+                    <p>50 minutes</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="gamestyle" class="gamestyle">
+        <div class="infinite">
+            <div class="wrapper">
+                <button onclick="gametype()" class="basestyle"></button>
+                <button onclick="gametype1()" class="white color"></button>
+                <button onclick="gametype2()" class="blue color"></button>
+                <button onclick="gametype3()" class="black color"></button>
+                <button onclick="gametype4()" class="red color"></button>
+                <button onclick="gametype5()" class="green color"></button>
+            </div>
+            <div class="text basetext" id="base">
+                <h2>5 couleurs. 5 style de jeu. Des possibilitées infinies</h2>
+                <p>Chacune des cinq couleurs de Magic représente une philosophie différente et un style de jeu différent. Choisissez votre ou vos couleurs pour décider de quel type de terrain vous tirerez des ressources (mana) et quel type de magie vous utiliserez.</p>
+            </div>
+            <div class="text" id="white">
+                <h2>BLANC</h2>
+                <p>White fait le travail avec le travail d'équipe et l'équilibre. Couleur défensive la plus puissante, le blanc utilise des sorts de protection pour protéger vos créatures des attaques ennemies !</p>
+            </div>
+            <div class="text" id="blue">
+                <h2>Bleu</h2>
+                <p>Bleu sélectionne les stratégies de l'adversaire, puis les écrase. La prévoyance est la clé du succès lorsque vous jouez cette couleur. Il est plus fort lorsqu'il est joué défensivement, ce qui signifie planifier deux, voire cinq pas d'avance.</p>
+            </div>
+            <div class="text" id="black">
+                <h2>Noir</h2>
+                <p>De la puissance, peu importe le prix. Le noir est l'endroit où vous pouvez trouver des créatures effrayantes comme des vampires, des démons et des morts-vivants errants. C'est aussi là que vous échangerez des ressources (parfois même de la vie !) afin de détruire votre opposition.</p>
+            </div>
+            <div class="text" id="red">
+                <h2>Rouge</h2>
+                <p>Rouge veut gagner vite et gagner maintenant. Le rouge est joué comme une couleur agressive qui utilise la puissance, les dégâts et les tactiques de jeu rapide pour décimer les adversaires.</p>
+            </div>
+            <div class="text" id="green">
+                <h2>Vert</h2>
+                <p>Un excellent choix pour les débutants, le vert est rempli des créatures les plus féroces de la nature : plus elles sont grosses, mieux c'est ! Le vert joue avec une force aussi imparable que la nature elle-même. Amoureux des animaux, cette couleur est pour vous.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="lecture">
+        <div>
+            <h2>Comment lire une carte magic</h2>
+            <img src="" alt="carte magic">
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <ul>
+                <ul>
+                    <li><a href="https://www.facebook.com/MagicTheGathering.fr/?brand_redir=201120755306"></a></li>
+                    <li><a href="https://twitter.com/wizards_magic"></a></li>
+                    <li><a href="https://www.twitch.tv/magic"></a></li>
+                    <li><a href="https://www.youtube.com/channel/UC8ZGymAvfP97qJabgqUkz4A"></a></li>
+                </ul>
+            </ul>
+            <ul>
+                <ul>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                </ul>
+            </ul>
+            <ul>
+                <ul>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                </ul>
+            </ul>
+            <ul>
+                <ul>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                </ul>
+            </ul>
+        </div>
+    </footer>
+<script type="text/javascript" src="./js/script.js"></script>
 </body>
+
 </html>

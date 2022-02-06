@@ -1,0 +1,461 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body {
+  background-color: #000000;
+  margin: 0;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+h2 {
+  color: #334756;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+nav {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #334756;
+  padding: 10px 0;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+nav .logo {
+  height: 50px;
+  width: 150px;
+}
+
+nav ul {
+  margin-left: 50px;
+}
+
+nav ul li {
+  padding: 15px;
+}
+
+nav ul li a {
+  color: White;
+  text-decoration: none;
+  vertical-align: center;
+}
+
+nav ul li a:hover {
+  color: #F0A500;
+}
+
+nav ul .color {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  top: 10px;
+  right: 20px;
+  background: none;
+  border: none;
+}
+
+header .head {
+  background-image: url(../img/images/943281.jpg);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-position: center center;
+  background-size: cover;
+}
+
+header .head .container {
+  background-color: #0820329a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 30%;
+  padding: 0 50px;
+  height: 90vh;
+}
+
+header .head .container img {
+  width: 70%;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+
+header .head .container p {
+  color: white;
+  line-height: 30px;
+  font-size: 22px;
+  letter-spacing: 2px;
+  padding: 25px 0px 25px 100px;
+}
+
+header .head a {
+  display: block;
+  position: absolute;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 15px;
+  font-size: 20px;
+  right: 10%;
+  background-color: #08203281;
+  padding: 30px;
+}
+
+.welcome {
+  background-image: url(../img/images/présentationbg1.jpg);
+  background-size: cover;
+  background-position: center bottom;
+}
+
+.welcome div {
+  padding: 50px 0 0;
+}
+
+.welcome div h1 {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-align: center;
+  color: #334756;
+  text-transform: uppercase;
+}
+
+.welcome div h1 span {
+  color: #F0A500;
+}
+
+.welcome div article {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0 0;
+}
+
+.welcome div article .wrap {
+  width: 40%;
+  margin-right: 25px;
+  padding: 0 30px;
+}
+
+.welcome div article .wrap p {
+  color: #334756;
+  font-size: 400;
+  letter-spacing: 2px;
+  line-height: 20px;
+  padding-right: 120px;
+}
+
+.welcome div article figure {
+  width: 30%;
+  margin-left: 25px;
+  background-image: url(../img/images/pngwing.com.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 400px;
+}
+
+.gameplay {
+  background-image: url(../img/images/gameplaybg.jpg);
+  background-size: cover;
+  background-position: top left;
+}
+
+.gameplay div {
+  padding: 50px 0;
+}
+
+.gameplay div h2 {
+  color: #334756;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.gameplay div h2 span {
+  color: #F0A500;
+}
+
+.gameplay div .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.gameplay div .btn button {
+  display: block;
+  background-color: #F0A500;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+  cursor: pointer;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 10px 37px -6px rgba(25, 25, 25, 0.67);
+          box-shadow: 0px 10px 37px -6px rgba(25, 25, 25, 0.67);
+  border: 0;
+  padding: 10px 30px;
+  margin: 10px 30px;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+
+.gameplay div .btn button:hover {
+  color: white;
+  background-color: #082032;
+  -webkit-box-shadow: 0px 10px 37px -6px #F0A500;
+          box-shadow: 0px 10px 37px -6px #F0A500;
+}
+
+.gameplay div p {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 18px;
+}
+
+.gameplay div .article1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.gameplay div .article1 .intro {
+  display: block;
+  width: 70%;
+}
+
+.gameplay div .article1 article {
+  display: block;
+  width: 30%;
+  margin: 0 20px;
+}
+
+.gameplay div .article1 article img {
+  height: 100px;
+  display: block;
+  margin: 0 auto;
+}
+
+.gameplay div .article1 p {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+  color: #082032;
+  padding: 25px 0;
+}
+
+.gameplay div .article1 p:nth-last-of-type(1) {
+  color: #F0A500;
+}
+
+.gameplay div .article {
+  display: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.gameplay div .article .intro {
+  display: block;
+  width: 70%;
+}
+
+.gameplay div .article article {
+  display: block;
+  width: 30%;
+  margin: 0 20px;
+}
+
+.gameplay div .article article img {
+  height: 100px;
+  display: block;
+  margin: 0 auto;
+}
+
+.gameplay div .article p {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+  color: #082032;
+  padding: 25px 0;
+}
+
+.gameplay div .article p:nth-last-of-type(1) {
+  color: #F0A500;
+}
+
+.gamestyle {
+  color: white;
+  background-color: white;
+}
+
+.gamestyle .infinite {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 25px 10px;
+}
+
+.gamestyle .infinite .wrapper {
+  position: relative;
+  height: 600px;
+}
+
+.gamestyle .infinite .wrapper .color {
+  display: block;
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  background-size: cover;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.gamestyle .infinite .wrapper .basestyle {
+  border: none;
+  background-color: transparent;
+  display: block;
+  cursor: pointer;
+  width: 600px;
+  height: 400px;
+  background-image: url(../img/picto/info.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+.gamestyle .infinite .text {
+  width: 35%;
+  color: #F0A500;
+  height: 100%;
+  display: none;
+}
+
+.gamestyle .infinite .text h2 {
+  font-size: 35px;
+  margin-bottom: 50px;
+  line-height: 40px;
+  color: #F0A500;
+}
+
+.gamestyle .infinite .text p {
+  color: #082032;
+  font-size: 18px;
+  letter-spacing: 2px;
+  line-height: 25px;
+  padding-right: 180px;
+}
+
+.gamestyle .infinite .basetext {
+  display: block;
+}
+
+.gamestyle .infinite .white {
+  background-image: url(../img/picto/blanc.png);
+  bottom: 270px;
+}
+
+.gamestyle .infinite .blue {
+  background-image: url(../img/picto/bleu.png);
+  bottom: 170px;
+  left: 110px;
+}
+
+.gamestyle .infinite .black {
+  background-image: url(../img/picto/noir.png);
+  bottom: 70px;
+  left: 250px;
+}
+
+.gamestyle .infinite .red {
+  background-image: url(../img/picto/rouge.png);
+  bottom: 170px;
+  left: 380px;
+}
+
+.gamestyle .infinite .green {
+  background-image: url(../img/picto/vert.png);
+  bottom: 270px;
+  left: 500px;
+}
+/*# sourceMappingURL=style.css.map */

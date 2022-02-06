@@ -1,0 +1,383 @@
+// ======================Reset css ==============>
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+
+// ================reset ended=================<
+
+// ===================Reccurences===============>
+$color1 : #F0A500;
+$color2 : #334756;
+$color3 : #082032;
+$color4 : #000000;
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+body {
+    background-color: $color4;
+    margin: 0;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+h2 {
+    color: $color2;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+// ===================Reccurences ended===============>
+
+nav {
+    justify-content: center;
+    align-items: center;
+    background-color: $color2;
+    padding: 10px 0;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    
+    .logo {
+        height: 50px;
+        width: 150px;
+    }
+    ul {
+        margin-left: 50px;
+        
+        li {
+            padding: 15px;
+            
+            a {
+                color: White;
+                text-decoration: none;
+                vertical-align: center;
+                &:hover {
+                    color: $color1;
+                }
+            }
+            }
+                .color {
+                position: absolute;
+                height: 50px;
+                width: 50px;
+                top: 10px;
+                right: 20px;
+                background: none;
+                border: none;
+                }
+    }
+} 
+header {
+    .head {
+        background-image: url(../img/images/943281.jpg);
+        align-items: center;
+        background-position: center center;
+        background-size: cover;
+        .container {
+            background-color: #0820329a;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 30%;
+            padding: 0 50px;
+            height: 90vh;
+            img {
+                width: 70%;
+                display: block;
+                margin: 0 auto;
+                margin-bottom: 25px;
+            }
+            p {
+                color: white;
+                line-height: 30px;
+                font-size: 22px;
+                letter-spacing: 2px;
+                padding: 25px 0px 25px 100px;
+
+            }
+        }
+        a {
+            display: block;
+            position: absolute;
+            color: white;
+            font-weight: 700;
+            letter-spacing: 3px;
+            text-decoration: none;
+            text-transform: uppercase;
+            border-radius: 15px;
+            font-size: 20px;
+            right: 10%;
+            background-color: #08203281;
+            padding: 30px;
+        }
+    }
+}
+.welcome {
+    background-image: url(../img/images/présentationbg1.jpg);
+    background-size: cover;
+    background-position: center bottom;
+    div {
+        padding: 50px 0 0;
+        h1 {
+            font-size: 32px;
+            font-weight: 700;
+            letter-spacing: 3px;
+            text-align: center;
+            color: $color2;
+            text-transform: uppercase;
+            span {
+                color: $color1;
+            }
+        }
+        article {
+            justify-content: center;
+            align-items: center;
+            padding: 20px 0 0;
+            .wrap {
+                width: 40%;
+                margin-right: 25px;
+                padding: 0 30px;
+                
+                p {
+                    color: $color2;
+                    font-size: 400;
+                    letter-spacing: 2px;
+                    line-height: 20px;
+                    padding-right: 120px;
+                    
+                }
+
+            }
+            figure {
+                width: 30%;
+                margin-left: 25px;
+                background-image: url(../img/images/pngwing.com.png);
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                height: 400px;
+            }
+        }
+    }
+}
+.gameplay {
+    background-image: url(../img/images/gameplaybg.jpg);
+    background-size: cover;
+    background-position: top left;
+    div {
+        padding: 50px 0;
+        h2 {
+            color: $color2;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 32px;
+            font-weight: 700;
+            letter-spacing: 3px;
+            span {
+                color: $color1;
+            }
+        }
+        .btn {
+            display: flex;
+            justify-content: center;
+            button {
+                display: block;
+                background-color: $color1;
+                text-transform: uppercase;
+                font-weight: 700;
+                letter-spacing: 2px;
+                cursor: pointer;
+                border-radius: 15px;
+                box-shadow: 0px 10px 37px -6px rgba(25,25,25,0.67);                border: 0;
+                padding: 10px 30px;
+                margin: 10px 30px;
+                transition: all ease 0.5s;
+                &:hover {
+                    color: white;
+                    background-color: $color3;
+                    box-shadow: 0px 10px 37px -6px $color1;
+                }
+            }
+        }
+        p {
+            text-align: center;
+            margin: 0 auto;
+            font-size: 18px;
+        }
+        .article1 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            .intro {
+                display: block;
+                width: 70%;
+            }
+            article {
+                display: block;
+                width: 30%;
+                margin: 0 20px;
+                img {
+                    height: 100px;
+                    display: block;
+                    margin: 0 auto;
+                }
+                
+            }
+            
+            p {
+                text-transform: uppercase;
+                font-weight: 700;
+                font-size: 18px;
+                color: $color3;
+                padding: 25px 0;
+                &:nth-last-of-type(1) {
+                    color: $color1;
+                    
+                }
+            }
+        }
+        .article {
+            .intro {
+                display: block;
+                width: 70%;
+            }
+            display: none;
+            flex-wrap: wrap;
+            justify-content: center;
+            article {
+                display: block;
+                width: 30%;
+                margin: 0 20px;
+                img {
+                    height: 100px;
+                    display: block;
+                    margin: 0 auto;
+                }
+            }
+            p {
+                text-transform: uppercase;
+                font-weight: 700;
+                font-size: 18px;
+                color: $color3;
+                padding: 25px 0;
+                &:nth-last-of-type(1) {
+                    color: $color1;
+                    
+                }
+            }
+        }
+    }
+}
+
+.gamestyle {
+    color: white;
+    background-color: white;
+    .infinite {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 25px 10px;
+        .wrapper{
+            position: relative;
+            height: 600px;
+            .color {
+            display: block;
+            position: absolute;
+            height: 100px;
+            width: 100px;
+            background-size: cover;
+            cursor: pointer;
+            border: none;
+            background-color: transparent;
+            }
+            .basestyle {
+                border: none;
+                background-color: transparent;
+                display: block;
+                cursor: pointer;
+                width: 600px;
+                height: 400px;
+                background-image: url(../img/picto/info.png);
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center center;
+        }}
+        .text {
+            width: 35%;
+            color: $color1;
+            height: 100%;
+            display: none;
+            h2 {
+                font-size: 35px;
+                margin-bottom: 50px;
+                line-height: 40px;
+                color: $color1;
+            }
+            p {
+                color: $color3;
+                font-size: 18px;
+                letter-spacing: 2px;
+                line-height: 25px;
+                padding-right: 180px;
+            }
+        }
+        .basetext {
+            display: block;
+        }
+        .white {
+            background-image: url(../img/picto/blanc.png);
+            bottom: 270px;
+        }
+        .blue {
+            background-image: url(../img/picto/bleu.png);
+            bottom: 170px;
+            left: 110px;
+
+        }
+        .black {
+            background-image: url(../img/picto/noir.png);
+            bottom: 70px;
+            left: 250px;
+
+        }
+        .red {
+            background-image: url(../img/picto/rouge.png);
+            bottom: 170px;
+            left: 380px;
+        }
+        .green {
+            background-image: url(../img/picto/vert.png);
+            bottom: 270px;
+            left: 500px;
+        }}}
