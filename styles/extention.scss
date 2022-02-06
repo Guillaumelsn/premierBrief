@@ -1,0 +1,25 @@
+$color1 : #F0A500;
+$color2 : #334756;
+$color3 : #082032;
+$color4 : #000000;
+
+body {
+    padding: 0;
+    margin: 0;
+}
+.wait {
+    height: 100vh;
+    background-color: $color4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    h1 {
+        font-size: 62px;
+        color: white;
+    }
+    p {
+        font-size: 42px;
+        color: $color1;
+    }
+}
