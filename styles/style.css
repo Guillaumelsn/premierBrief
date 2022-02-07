@@ -495,7 +495,6 @@ footer ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 10%;
 }
 
 footer ul li a {
@@ -606,5 +605,232 @@ footer .form .form-style td .error {
 
 .dark-mode header .head a {
   background-color: #f0a4009a;
+}
+
+@media screen and (max-width: 1250px) {
+  header .head .container p {
+    padding: 25px 0px 25px 10px;
+    font-size: 16px;
+  }
+  .welcome div h1 {
+    font-size: 22px;
+  }
+  header .head a {
+    letter-spacing: 2px;
+    font-size: 14px;
+    padding: 15px;
+  }
+  header .head .container img {
+    margin-bottom: 5px;
+    width: 50%;
+  }
+  .gameplay div {
+    padding: 25px 0;
+  }
+  .gameplay div h2 {
+    font-size: 22px;
+  }
+  .gamestyle .infinite .wrapper .basestyle {
+    width: 350px;
+    height: 350px;
+  }
+  .gamestyle .infinite .wrapper .color {
+    width: 50px;
+    height: 50px;
+  }
+  .gamestyle .infinite .white {
+    bottom: 280px;
+    left: 25px;
+  }
+  .gamestyle .infinite .blue {
+    bottom: 190px;
+    left: 90px;
+  }
+  .gamestyle .infinite .black {
+    bottom: 100px;
+    left: 150px;
+  }
+  .gamestyle .infinite .red {
+    bottom: 190px;
+    left: 220px;
+  }
+  .gamestyle .infinite .green {
+    bottom: 280px;
+    left: 280px;
+  }
+  .gameplay div .article1 .intro {
+    width: 100%;
+    padding: 0 50px;
+  }
+  .gameplay div .article .intro {
+    width: 100%;
+    padding: 0 50px;
+  }
+  .gameplay div .article1 article {
+    width: 25%;
+  }
+  .gameplay div .article article {
+    width: 25%;
+  }
+  .gameplay div .article article img {
+    height: 60px;
+  }
+  .gameplay div .article1 article img {
+    height: 60px;
+  }
+  .gameplay div .article p {
+    font-size: 14px;
+  }
+  .gameplay div .article1 p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .welcome div article .wrap p {
+    padding-right: 0;
+  }
+  .gamestyle .infinite {
+    padding: 20px 0;
+  }
+  .welcome div article figure {
+    width: 45%;
+  }
+  .welcome div article .wrap p {
+    font-size: 14px;
+    line-height: 15px;
+  }
+  .welcome div article {
+    padding: 10px 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header .head .container {
+    width: 100%;
+    position: relative;
+  }
+  header .head a {
+    bottom: 0;
+    right: 35%;
+  }
+  header .head .container img {
+    width: 30%;
+  }
+  header .head .container p {
+    padding: 10px 0;
+    font-size: 12px;
+  }
+  .welcome div h1 {
+    font-size: 16px;
+  }
+  h2, .gameplay div h2, .gamestyle .infinite .text h2 {
+    font-size: 14px;
+  }
+  .welcome div article .wrap {
+    padding: 0;
+  }
+  .welcome div article .wrap p, .gameplay div .article1 .intro, .gameplay div .article .intro, .gameplay div .article1 p, .gameplay div .article p, .gamestyle .infinite .text p {
+    font-size: 12px;
+  }
+  .gamestyle .infinite {
+    background-position: center center;
+  }
+  .gamestyle .infinite .wrapper .basestyle {
+    margin-top: 50px;
+    height: 290px;
+  }
+  footer {
+    display: block;
+  }
+  footer ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer .form {
+    margin: 0 auto;
+    margin-top: 25px;
+  }
+  footer .form h2 {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 675px) {
+  .welcome div article figure {
+    display: none;
+  }
+  .welcome div article .wrap {
+    width: 70%;
+  }
+  .welcome div h1 {
+    margin-bottom: 25px;
+  }
+  .gamestyle .infinite {
+    display: block;
+  }
+  .gamestyle .infinite .wrapper .basestyle {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .gamestyle .infinite .wrapper .color {
+    position: initial;
+  }
+  .gamestyle .infinite .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    height: 350px;
+  }
+  .gamestyle .infinite .basetext, .gamestyle .infinite .text {
+    width: 100%;
+    text-align: center;
+  }
+  .gamestyle .infinite .text p {
+    padding: 0 20px;
+  }
+  .gamestyle .infinite .text h2 {
+    margin-bottom: 10px;
+  }
+  footer .form {
+    width: 100%;
+  }
+  .gameplay div .btn button {
+    width: 35%;
+  }
+  .gameplay div .btn {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  header .head a {
+    right: 10px;
+    bottom: -10px;
+  }
+  nav .logo {
+    display: none;
+  }
+  footer .form .form-style {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .gameplay div .article1 article {
+    width: 40%;
+  }
+  .gameplay div .article article {
+    width: 40%;
+  }
+  .gameplay div .btn button {
+    padding: 10px;
+  }
+  header .head .container {
+    padding: 0 15px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
